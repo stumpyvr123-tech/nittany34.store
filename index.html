@@ -15,12 +15,70 @@
 <body>
     <h1 class="font" style="text-align: center;">Nittany34.store</h1>
 
-    <h1 style="text-align: center;" class="font">Work in progress!</h1>
+    <a href="products.html" class="button-link">View Products</a>
 
 
     <style>
         .font {
             font-family: Comic Relief;
+
+        }
+
+
+        .button-link {
+            color: rgb(237, 239, 241);
+            text-decoration: none;
+            background-color: rgb(212, 0, 255);
+            padding: 15px;
+            border-radius: 30px;
+            font-family: Comic Relief;
+            font-size: 13px;
+            font-weight: 300;
+
+
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            width: fit-content;
+            transition: 300ms;
+
+        }
+
+        .button-link:hover {
+            color: rgb(237, 239, 241);
+            text-decoration: none;
+            background-color: rgb(212, 0, 255);
+            animation: simpleBounce 0.8s ease-in-out infinite alternate;
+            border-radius: 30px;
+            font-family: Comic Relief;
+            font-size: 13px;
+
+            animation: bounce 2s ease-in-out infinite;
+        }
+
+        /* 1. Define the multi-step animation sequence */
+        @keyframes shake {
+            0% {
+                transform: translateX(0);
+            }
+
+            25% {
+                transform: translateX(-5px);
+            }
+
+            50% {
+                transform: translateX(5px);
+            }
+
+            75% {
+                transform: translateX(-5px);
+            }
+
+            100% {
+                transform: translateX(0);
+            }
+
+
 
         }
     </style>
