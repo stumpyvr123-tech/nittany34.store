@@ -53,33 +53,27 @@
             font-family: Comic Relief;
             font-size: 13px;
 
-            animation: bounce 2s ease-in-out infinite;
+            animation: bouncyFloat 4s ease-in-out infinite;
         }
 
-        /* 1. Define the multi-step animation sequence */
-        @keyframes shake {
-            0% {
-                transform: translateX(0);
-            }
 
-            25% {
-                transform: translateX(-5px);
-            }
+        @keyframes bouncyFloat {
 
-            50% {
-                transform: translateX(5px);
-            }
-
-            75% {
-                transform: translateX(-5px);
-            }
 
             100% {
-                transform: translateX(0);
+                transform: translateY(0px) scaleY(1);
             }
 
 
 
+
+
+
+
+            75% {
+                transform: translateY(5px) scaleY(1);
+
+            }
         }
     </style>
 </body>
